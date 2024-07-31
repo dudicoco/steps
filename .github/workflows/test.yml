@@ -4,6 +4,9 @@ name: Tests Devops
 
 on:
   pull_request: {}
+  push:
+    branches:
+    - '!migration-**'
 
 jobs:
   test:
