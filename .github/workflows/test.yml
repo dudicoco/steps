@@ -14,4 +14,4 @@ jobs:
 
     steps:
     - run: |
-        echo "${{ github.event.push.head_commit.message }}"
+        echo ${{ toJson(github) }}
